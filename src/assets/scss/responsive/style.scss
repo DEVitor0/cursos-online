@@ -1,0 +1,264 @@
+@use "../components";
+
+@media only screen and (min-width: 1200px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        height: auto;
+        width: 100%;
+        background-color: components.$background;
+        background-image: url("../../../../src/assets/images/backgrounds/bg2.png");
+
+        &__nav {
+            width: inherit;
+            @include components.flexContainer(space-between, center, row);
+            padding: 25px 0;
+
+            &__brand {
+                flex: 1;
+                /*Logo do leca aqui*/
+            }
+
+            &__itens {
+                flex: 2;
+                height: auto;
+                display: flex;
+                justify-content: center;
+
+                &__list {
+                    width: auto;
+                    @include components.navegationItems();
+                    @include components.flexContainer(center, center, row);
+                    gap: 2vw;
+                }
+            }
+
+            &__login {
+                flex: 1;
+                @include components.flexContainer(flex-end, center, row);
+
+                button {
+                    @include components.buttons();
+                    font-size: 1.2em;
+                    transition: transform 0.6s ease-out;
+
+                    &:first-child {
+                        background-color: transparent;
+                        color: components.$especial-texts;
+                        margin-right: 1vw;
+
+                        &:hover {
+                            color: components.$especial-texts-2;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        color: components.$background;
+                        margin-right: 3vw;
+                        padding: 10px;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__layout {
+            display: flex;
+            flex-direction: row;
+
+            &__text {
+                width: 50%;
+                height: auto;
+
+                h1 {
+                    color: components.$especial-texts;
+                    @include components.signika("SignikaNegative-Medium.ttf", "Medium");
+                    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
+                    margin-left: 4vw;
+                    margin-top: 15vh;
+                    font-size: 5vw;
+
+                    span {
+                        color: components.$especial-texts-2;
+                        text-decoration: underline;
+                    }
+                }
+
+                p {
+                    font-family: "Signika-Light", Helvetica, sans-serif;
+                    font-size: 1.3em;
+                    color: components.$especial-texts;
+                    margin-left: 4.4vw;
+                    margin-top: 0.6vw;
+                    width: 82%;
+                }
+
+                &__container-buttons {
+                    margin: 4vw 0 4vw 4vw;
+
+                    button {
+                        @include components.buttons();
+                        font-size: 1.1em;
+
+                        &:first-child {
+                            width: 150px;
+                            margin-right: 10px;
+                            transition: transform 0.6s ease-out;
+                            color: components.$background;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            color: components.$especial-texts-2;
+                            background-color: transparent;
+                            border: 1px solid components.$especial-texts-2;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+
+            &__banner {
+                width: 50%;
+                @include components.flexContainer(flex-end, center, column);
+
+                &__image {
+                    width: 80%;
+                    height: 100%;
+                    background-image: url("../../../../src/assets/images/people/person-header.png");
+                    background-size: cover;
+
+                    &__content {
+                        width: 100%;
+                        height: 50%;
+
+                        &:first-child {
+                            @include components.flexContainer(flex-start, flex-end, row);
+                        }
+
+                        &:nth-child(2) {
+                            @include components.flexContainer(flex-end, center, row);
+                        }
+
+                        &__texts {
+                            background-color: #ccdad7f3;
+                            border-radius: 3px;
+                            padding: 5px;
+                            display: flex;
+                            flex-direction: row;
+
+                            &:first-child {
+                                margin-left: 2vw;
+                            }
+
+                            &__icon-video {
+                                width: 38px;
+                                height: 38px;
+                                border-radius: 50%;
+                                background-color: #02559B;
+                                margin-right: 10px;
+                                position: relative;
+
+                                &__player {
+                                    width: 25px;
+                                    height: 25px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    border-style: solid;
+                                    border-width: 12px 0 12px 20px;
+                                    border-color: transparent transparent transparent white;
+                                    transform: translate(-30%, -50%);
+                                    border-radius: 3px;
+                                }
+
+                                i.fa-user {
+                                    width: 25px;
+                                    height: 25px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-8px, -33%);
+                                    color: components.$especial-texts-2;
+                                    font-size: 1.2em
+                                }
+                            }
+
+                            &__messages {
+                                &__count {
+                                    color: #02559B;
+                                    font-family: "Roboto-Medium", Helvetica, sans-serif;
+                                }
+
+                                &__text {
+                                    @include components.roboto("Roboto-Medium.ttf", "Medium");
+                                    font-family: "Roboto-Medium", Helvetica, sans-serif;
+                                    color: components.$sub-titles;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        @include components.flexContainer(center, center, column);
+        background-color: components.$background;
+
+        .sections {
+            width: 90%;
+
+            .sections__about-us {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto auto;
+                gap: 20px;
+                margin-top: 6vh;
+            }
+
+            .sections__about-us__especial__text {
+                grid-column: span 2;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: row;
+
+                .sections__about-us__especial__text {
+                    &__titles {
+                        @include components.Titles();
+                    }
+                }
+            }
+
+            .sections__about-us__item {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            }
+
+            .sections__about-us__item:nth-child(2) {
+                grid-column: 3 / 4;
+            }
+        }
+    }
+
+}

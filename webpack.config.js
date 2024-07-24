@@ -1,10 +1,9 @@
-/* eslint-disable no-undef */
 const path = require('path');
 
 module.exports = {
   mode: 'production',
   entry: {
-    main: ['./src/assets/js/script.js'],
+    main: ['./src/assets/js/script.js']
   },
   output: {
     filename: '[name].bundle.js',
