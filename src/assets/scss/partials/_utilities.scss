@@ -16,7 +16,7 @@
     font-size: 1.3em;
 }
 
-@mixin navegationItems() {
+@mixin navigationItems() {
     li {
         @include menuLists();
         transition: all 0.3s ease-out;
@@ -29,22 +29,20 @@
 }
 
 @mixin texts {
-    font-family: "Signika-Light", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     font-size: 1.1em;
     color: colors.$all-texts;
 }
 
 @mixin Titles() {
-    @include text.roboto("Roboto-Light.ttf", "Light");
-    font-family: "Roboto-Light", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 2.2em;
+    @include text.rubik("Rubik-Light.ttf", "Light");
+    font-family: "Rubik-Light", Helvetica, sans-serif;
+    font-size: 2.5vw;
     color: colors.$titles;
 }
 
 @mixin Subtitles() {
-    @include text.signika("SignikaNegative-Medium.ttf", "Medium");
-    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     font-size: 1.2em;
     color: colors.$sub-titles;
     text-decoration: underline;
@@ -54,8 +52,19 @@
     border: none;
     padding: 10px;
     border-radius: 20px;
-    color: white;
+    color: colors.$all-texts;
     background-color: colors.$button-all;
-    font-family: "Signika-Light", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+@mixin especial-buttons {
+    border: 3px solid black;
+    color: colors.$especial-texts-2;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: colors.$especial-buttons;
+    font-size: 1.3em;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     cursor: pointer;
 }

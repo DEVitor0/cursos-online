@@ -1,122 +1,735 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cursos Jacareí</title>
+        <link rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="./public/assets/css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/040ec7ddb7.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos Jacareí</title>
-    <link rel="shortcut icon" href="./src/assets/images/icons/favicon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="./public/assets/css/style.css">
-    <script src="https://kit.fontawesome.com/040ec7ddb7.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__nav__brand">
-
-            </div>
-            <div class="header__nav__itens">
-                <ul class="header__nav__itens__list">
-                    <li class="header__nav__itens__list--elements">Home</li>
-                    <li class="header__nav__itens__list--elements">Cursos <i class="fa-solid fa-chevron-down"></i></li>
-                    <li class="header__nav__itens__list--elements">Sobre <i class="fa-solid fa-chevron-down"></i></li>
-                    <li class="header__nav__itens__list--elements">Blog <i class="fa-solid fa-chevron-down"></i></li>
-                    <li class="header__nav__itens__list--elements">Páginas <i class="fa-solid fa-chevron-down"></i></li>
-                    <li class="header__nav__itens__list--elements">Contato</li>
-                </ul>
-            </div>
-            <div class="header__nav__login">
-                <button>Login</button>
-                <button>Registrar</button>
-            </div>
-        </nav>
-        <div class="header__layout">
-            <div class="header__layout__text">
-                <h1>We've amazing Skills for <span>Teaching</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Ut ullamcorper sit adipiscing sagittis mi nisl risus. Eget
-                    ultrices risus magna hendrerit tortor.</p>
-                <div class="header__layout__text__container-buttons">
-                    <button>Explorar Cursos</button>
-                    <button class="btn-1">Ler Mais</button>
+    <body>
+        <header class="header">
+            <nav class="header__nav">
+                <div class="header__nav__brand"></div>
+                <div class="header__nav__itens">
+                    <ul class="header__nav__itens__list">
+                        <li class="header__nav__itens__list--elements">Home</li>
+                        <li class="header__nav__itens__list--elements">
+                            Cursos <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="header__nav__itens__list--elements">
+                            Sobre <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="header__nav__itens__list--elements">
+                            Blog <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="header__nav__itens__list--elements">
+                            Páginas <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="header__nav__itens__list--elements">
+                            Contato
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="header__layout__banner">
-                <div class="header__layout__banner__image">
-                    <div class="header__layout__banner__image__content">
-                        <div class="header__layout__banner__image__content__texts">
-                            <div class="header__layout__banner__image__content__texts__icon-video">
-                                <div class="header__layout__banner__image__content__texts__icon-video__player"></div>
+                <div class="header__nav__login">
+                    <button>Login</button>
+                    <button>Registrar</button>
+                </div>
+            </nav>
+            <div class="header__layout">
+                <div class="header__layout__text">
+                    <h1>We've amazing Skills for <span>Teaching</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Ut ullamcorper
+                        sit adipiscing sagittis mi nisl risus. Eget ultrices
+                        risus magna hendrerit tortor.
+                    </p>
+                    <div class="header__layout__text__container-buttons">
+                        <button>Explorar Cursos</button>
+                        <button class="btn-1">Ler Mais</button>
+                    </div>
+                </div>
+                <div class="header__layout__banner">
+                    <div class="header__layout__banner__image">
+                        <div class="header__layout__banner__image__content">
+                            <div
+                                class="header__layout__banner__image__content__texts"
+                            >
+                                <div
+                                    class="header__layout__banner__image__content__texts__icon-video"
+                                >
+                                    <div
+                                        class="header__layout__banner__image__content__texts__icon-video__player"
+                                    ></div>
+                                </div>
+                                <div
+                                    class="header__layout__banner__image__content__texts__messages"
+                                >
+                                    <span
+                                        class="header__layout__banner__image__content__texts__messages__count"
+                                        >1500 +</span
+                                    >
+                                    <p
+                                        class="header__layout__banner__image__content__texts__messages__text"
+                                    >
+                                        Online Courses
+                                    </p>
+                                </div>
                             </div>
-                            <div class="header__layout__banner__image__content__texts__messages">
-                                <span class="header__layout__banner__image__content__texts__messages__count">+ 30</span>
-                                <p class="header__layout__banner__image__content__texts__messages__text">Cursos
-                                    Gratuitos</p>
+                        </div>
+                        <div class="header__layout__banner__image__content">
+                            <div
+                                class="header__layout__banner__image__content__texts"
+                            >
+                                <div
+                                    class="header__layout__banner__image__content__texts__icon-video"
+                                >
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div
+                                    class="header__layout__banner__image__content__texts__messages"
+                                >
+                                    <span
+                                        class="header__layout__banner__image__content__texts__messages__count"
+                                        >200 +</span
+                                    >
+                                    <p
+                                        class="header__layout__banner__image__content__texts__messages__text"
+                                    >
+                                        Online Tutors
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="header__layout__banner__image__content">
-                        <div class="header__layout__banner__image__content__texts">
-                            <div class="header__layout__banner__image__content__texts__icon-video">
-                                <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="sections">
+                <div class="sections__about-us">
+                    <div class="sections__about-us__especial__text">
+                        <div
+                            class="sections__about-us__especial__text__container"
+                        >
+                            <h2
+                                class="sections__about-us__especial__text__titles"
+                            >
+                                About our courses
+                            </h2>
+                            <p
+                                class="sections__about-us__especial__text__paragraph"
+                            >
+                                High-quality, affordable education accessible to
+                                all learners seeking excellence without
+                                financial burden, ensuring accessibility and
+                                excellence.
+                            </p>
+                            <button
+                                class="sections__about-us__especial__text__button"
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                        <div class="sections__about-us__especial__image">
+                            <img
+                                src="./src/assets/images/icons/graduation.png"
+                                alt="Graduation"
+                            />
+                        </div>
+                    </div>
+                    <div class="sections__about-us__item">
+                        <div class="sections__about-us__container-image">
+                            <img
+                                src="./src/assets/images/icons/calendar.png"
+                                alt="Calendar"
+                            />
+                        </div>
+                        <div class="sections__about-us__container__text">
+                            <h2
+                                class="sections__about-us__container__text__subtitle"
+                            >
+                                Flexible Learning
+                            </h2>
+                            <p
+                                class="sections__about-us__container__text__paragraph"
+                            >
+                                Flexible learning opportunities with
+                                comprehensive content and interactive elements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sections__about-us__item">
+                        <div class="sections__about-us__container-image">
+                            <img
+                                src="./src/assets/images/icons/learning.png"
+                                alt="learning"
+                            />
+                        </div>
+                        <div class="sections__about-us__container__text">
+                            <h2
+                                class="sections__about-us__container__text__subtitle"
+                            >
+                                Learn Anything
+                            </h2>
+                            <p
+                                class="sections__about-us__container__text__paragraph"
+                            >
+                                Expand your knowledge and skills with a wide
+                                range of courses available.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sections__about-us__item">
+                        <div class="sections__about-us__container-image">
+                            <img
+                                src="./src/assets/images/icons/livre.png"
+                                alt="Free"
+                            />
+                        </div>
+                        <div class="sections__about-us__container__text">
+                            <h2
+                                class="sections__about-us__container__text__subtitle"
+                            >
+                                Affordable Pricing
+                            </h2>
+                            <p
+                                class="sections__about-us__container__text__paragraph"
+                            >
+                                Access quality education at a price that won't
+                                break the bank.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sections__about-us__item">
+                        <div class="sections__about-us__container-image">
+                            <img
+                                src="./src/assets/images/icons/certificate.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="sections__about-us__container__text">
+                            <h2
+                                class="sections__about-us__container__text__subtitle"
+                            >
+                                Certification
+                            </h2>
+                            <p
+                                class="sections__about-us__container__text__paragraph"
+                            >
+                                Receive official certification upon course
+                                completion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sections">
+                <div class="sections__title">
+                    <h2>Our Latest Course</h2>
+                </div>
+                <nav class="sections__nav">
+                    <div class="sections__nav__container-list">
+                        <ul class="sections__nav__container-list__ul">
+                            <li
+                                class="sections__nav__container-list__ul__items"
+                            >
+                                All Courses
+                            </li>
+                            <li
+                                class="sections__nav__container-list__ul__items"
+                            >
+                                Project Manager
+                            </li>
+                            <li
+                                class="sections__nav__container-list__ul__items"
+                            >
+                                UX/UI Design
+                            </li>
+                            <li
+                                class="sections__nav__container-list__ul__items"
+                            >
+                                Digital Market
+                            </li>
+                            <li
+                                class="sections__nav__container-list__ul__items"
+                            >
+                                Data Scientist
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="sections__nav__button">
+                            Explore All Courses
+                        </button>
+                    </div>
+                </nav>
+                <div class="sections__container-courses">
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-1"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
                             </div>
-                            <div class="header__layout__banner__image__content__texts__messages">
-                                <span class="header__layout__banner__image__content__texts__messages__count">200
-                                    +</span>
-                                <p class="header__layout__banner__image__content__texts__messages__text">Online Tutors
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>Graphic Design for Beginners</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
                                 </p>
                             </div>
                         </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-2"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>Web Design Fundamentals</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-3"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>UI/UX Design</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="sections">
-            <div class="sections__about-us">
-                <div class="sections__about-us__especial__text">
-                    <div>
-                        <h2 class="sections__about-us__especial__text__titles">About our courses</h2>
-                        <p>High-quality, affordable education accessible to all learners seeking excellence without financial
-                            burden, ensuring accessibility and excellence.</p>
-                        <button>Learn More</button>
+                <div class="sections__container-courses">
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-4"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>Front-end Development</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
                     </div>
-                    <div class="sections__about-us__especial__image">
-                        <img src="./src/assets/images/icons/graduation.png" alt="Graduation">
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-5"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>Mobile App Development</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="sections__container-courses__items">
+                        <div
+                            class="sections__container-courses__items__image sections__container-courses__items__image-6"
+                        ></div>
+                        <div
+                            class="sections__container-courses__items__informations"
+                        >
+                            <div>
+                                <div
+                                    class="sections__container-courses__items__informations__duration"
+                                >
+                                    <p>4 weeks</p>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__informations__level"
+                                >
+                                    <p>Beginner</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__informations__by"
+                            >
+                                <p>By Jonh Smith</p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__about-course"
+                        >
+                            <div>
+                                <h2>Advanced JavaScript</h2>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__avaliation"
+                            >
+                                <div>
+                                    <i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i
+                                    ><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    class="sections__container-courses__items__about-course__avaliation__review"
+                                >
+                                    <p>(20 Reviews)</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__about-course__opinions"
+                            >
+                                <p>
+                                    Dive into mobile app development. Learn to
+                                    build native iOS and Android apps using...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="sections__container-courses__items__last-informations"
+                        >
+                            <div
+                                class="sections__container-courses__items__last-informations__lessons"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <p>30 Lesson</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__number-students"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                                <p>120 Students</p>
+                            </div>
+                            <div
+                                class="sections__container-courses__items__last-informations__see"
+                            ></div>
+                        </div>
                     </div>
                 </div>
-                <div class="sections__about-us__item">
-                    <div class="sections__about-us__container__image"></div>
-                    <div class="sections__about-us__container__container-text">
-                        <h2>Flexible Learning</h2>
-                        <p>Flexible learning opportunities with comprehensive content and interactive elements.</p>
-                    </div>
-                </div>
-                <div class="sections__about-us__item">
-                    <div class="sections__about-us__container__image"></div>
-                    <div class="sections__about-us__container__container-text">
-                        <h2>Learn Anything</h2>
-                        <p>Expand your knowledge and skills with a wide range of courses available.</p>
-                    </div>
-                </div>
-                <div class="sections__about-us__item">
-                    <div class="sections__about-us__container__image"></div>
-                    <div class="sections__about-us__container__container-text">
-                        <h2>Affordable Pricing</h2>
-                        <p>Access quality education at a price that won't break the bank.</p>
-                    </div>
-                </div>
-                <div class="sections__about-us__item">
-                    <div class="sections__about-us__container__image"></div>
-                    <div class="sections__about-us__container__container-text">
-                        <h2>Certification</h2>
-                        <p>Receive official certification upon course completion.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
-
+            </section>
+        </main>
+    </body>
 </html>
